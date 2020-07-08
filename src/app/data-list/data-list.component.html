@@ -1,0 +1,17 @@
+<div class="data-list">
+    <div class="header-wrapper">
+        <h1>Data List Example</h1>
+    </div>
+    <div>
+        <button (click)="handleExpandAllItems()">Expand All </button>
+        <button (click)="handleCollapseAll()">Collapse All </button>
+    </div>
+    <div class='list-wrapper'>
+        <app-list-item
+            [dataNode]="rootNode"
+            [setChildrenVisibility]="handleSetChildrenVisibility"
+            [listItemChildrenVisible]="listItemChildrenVisible"
+        >
+        </app-list-item>
+    </div>
+</div>

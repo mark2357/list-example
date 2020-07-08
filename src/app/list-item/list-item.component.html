@@ -1,0 +1,28 @@
+<div class='list-item'>
+    <div class="item-wrapper">
+        <div
+            [class]=" 'arrow-wrapper' + (dataNode.childNodes.length == 0 ? ' hidden-element' : '')"
+            (click)="handleToggleChildren()"
+        >
+            <i [class]="childrenVisible ? 'arrow down' : 'arrow right'"></i>
+        </div>
+        <div class="text-wrapper" (click)="handleToggleChildren()">
+            <span>Name: {{dataNode.name}}</span>
+            <span>Value: {{dataNode.totalValue}}</span>
+        </div>
+        <button
+            [class]="dataNode.childNodes.length == 0 ? 'hidden-element' : ''"
+            (click)="handleCollapseOthers()"
+            >
+                Collapse Others
+            </button>
+    </div>
+    <div [class]="childrenVisible ? '' : 'hidden'" *ngFor="let item of dataNode.childNodes">
+        <app-list-item
+            [dataNode]="item"
+            [setChildrenVisibility]="setChildrenVisibility"
+            [listItemChildrenVisible]="listItemChildrenVisible"
+        >
+        </app-list-item>
+    </div>
+</div>

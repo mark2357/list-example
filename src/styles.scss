@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    background-color: #222222;
+    font-family: Arial, sans-serif;
+}
+button {
+    pointer-events: all;
+    border-radius: 0.5em;
+    background: #206590;
+    border: 0em solid #09c;
+    color: #eee;
+    transition: color 0.3s, background 0.3s;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    margin: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}

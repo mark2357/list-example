@@ -1,0 +1,41 @@
+.data-list {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    .header-wrapper {
+        width: 100%;
+        text-align: center;
+        color: #eee;
+    }
+
+    .list-wrapper {
+        background-color: #1c1c1c;
+        // width: min-content;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: #206590;
+        width: 100%;
+        flex-grow: 1;
+        
+    }
+}
+
+// used to style scrollbar in webkit browsers e.g. chrome
+::-webkit-scrollbar {
+    height: 1em;
+    width: 1em;
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: #206590;
+    -webkit-border-radius: 0.5em;
+}
+::-webkit-scrollbar-corner {
+    background: #000;
+}
