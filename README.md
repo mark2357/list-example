@@ -2,6 +2,13 @@
 A basic list example that displays data from the sampledata.csv
 The displayed value is the of a name is the total value of it and all of it's children
 
+## using the website
+it's a basic list example, with simple controls
+clicking on each item with hide or expand it's children
+if you click the select button only that item and it's child items will be displayed
+to clear the selected item click the clear selected button
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.10.
 
 ## Development Environment Setup
