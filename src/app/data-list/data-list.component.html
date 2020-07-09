@@ -5,11 +5,13 @@
     <div>
         <button (click)="handleExpandAllItems()">Expand All </button>
         <button (click)="handleCollapseAll()">Collapse All </button>
+        <button [disabled]="selectedNode == null ? true : false" (click)="handleClearSelectedNode()">Clear Selected</button>
     </div>
     <div class='list-wrapper'>
         <app-list-item
-            [dataNode]="rootNode"
+            [dataNode]="selectedNode == null ? rootNode : selectedNode"
             [setChildrenVisibility]="handleSetChildrenVisibility"
+            [setSelectedNode]="handleSetSelectedNode"
             [listItemChildrenVisible]="listItemChildrenVisible"
         >
         </app-list-item>

@@ -8,7 +8,7 @@ button {
     pointer-events: all;
     border-radius: 0.5em;
     background: #206590;
-    border: 0em solid #09c;
+    border: none;
     color: #eee;
     transition: color 0.3s, background 0.3s;
     cursor: pointer;
@@ -19,4 +19,8 @@ button {
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+}
+button:disabled {
+    color: #B1B1B1;
+    background: #195173;
 }

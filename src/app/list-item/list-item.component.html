@@ -11,16 +11,17 @@
             <span>Value: {{dataNode.totalValue}}</span>
         </div>
         <button
-            [class]="dataNode.childNodes.length == 0 ? 'hidden-element' : ''"
-            (click)="handleCollapseOthers()"
+            [class]="showSelectButton ? '' : 'hidden-element'"
+            (click)="setSelectedNode(this.dataNode.id)"
             >
-                Collapse Others
+                Select
             </button>
     </div>
     <div [class]="childrenVisible ? '' : 'hidden'" *ngFor="let item of dataNode.childNodes">
         <app-list-item
             [dataNode]="item"
             [setChildrenVisibility]="setChildrenVisibility"
+            [setSelectedNode]="setSelectedNode"
             [listItemChildrenVisible]="listItemChildrenVisible"
         >
         </app-list-item>
