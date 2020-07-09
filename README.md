@@ -1,6 +1,6 @@
 # ListExample
 A basic list example that displays data from the sampledata.csv
-The displayed value is the of a name is the total value of it and all of it's children
+The displayed value for each list item is the total value of it and all of it's children
 
 ## using the website
 it's a basic list example, with simple controls
