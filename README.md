@@ -1,12 +1,15 @@
-# ListExample
+# List Example
 A basic list example that displays data from the sampledata.csv
 The displayed value for each list item is the total value of it and all of it's children
 
-## using the website
-it's a basic list example, with simple controls
-clicking on each item with hide or expand it's children
-if you click the select button only that item and it's child items will be displayed
-to clear the selected item click the clear selected button
+## Using The Website
+A live version of the website can be found here https://mark2357.github.io/list-example-site/
+
+
+It's a basic list example, with simple controls
+Clicking on each item with hide or expand it's children
+If you click the select button only that item and it's child items will be displayed
+To clear the selected item click the clear selected button
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.10.
@@ -14,17 +17,30 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development Environment Setup
 If you have previously done web development you should be able to skip several of these steps
 ### Node.js
-A current version of Node js needs to be installed
-available from https://nodejs.org/en/download/
+A current version of Node js needs to be installed from https://nodejs.org/en/download/
 
 ### NPM
-you will need a current version of npm installed (this comes with node.js by default)
+You will need a current version of npm installed (this comes with node.js by default)
 
 ### Angular CLI
 As this project needs version 9.1.10 of the angular cli you will need to install that specific version of tha angular cli
-this can be done with the following command
+This can be done with the following command
 ```
-npm install @angular/cli@9.1.10
+npm install -g @angular/cli@9.1.10
+```
+
+## Project Download
+Ff you have basic git and npm experience you can probably already know the following steps
+
+Open your chosen terminal application and move to the folder where you want to store the project
+Run the following commands to download the project from github and install all node modules
+
+```
+git clone https://github.com/mark2357/list-example.git
+
+cd list-example
+
+npm install
 ```
 
 
